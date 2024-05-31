@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body style="background-color: black;">
+    <h1>ADVANCED CALCULATOR</h1>
+<table>
+  <div class="calculator">
+    <input type="text" id="result" style="height: 25px; width:auto;"readonly>
+    <div class="buttons">
+      <button onclick="appendToResult('1')">1</button>
+      <button onclick="appendToResult('2')">2</button>
+      <button onclick="appendToResult('3')">3</button>
+      <button onclick="appendToResult('+')">+</button>
+      <button onclick="appendToResult('4')">4</button>
+      <button onclick="appendToResult('5')">5</button>
+      <button onclick="appendToResult('6')">6</button>
+      <button onclick="appendToResult('-')">-</button>
+      <button onclick="appendToResult('7')">7</button>
+      <button onclick="appendToResult('8')">8</button>
+      <button onclick="appendToResult('9')">9</button>
+      <button onclick="appendToResult('*')">*</button>
+      <button onclick="appendToResult('0')">0</button>
+      <button onclick="memoryAdd()">M+</button>
+      <button onclick="memorySubtract()">M-</button>
+      <button onclick="appendToResult('/')">/</button>
+      <button onclick="memoryClear()">MC</button>
+      <button onclick="memoryRecall()">MR</button>
+      <button onclick="appendToResult('sin(')">sin</button>
+      <button onclick="appendToResult('cos(')">cos</button>
+      <button onclick="appendToResult('tan(')">tan</button>
+      <button onclick="appendToResult('log(')">log</button>
+      <button onclick="appendToResult('sqrt(')">sqrt</button>
+      <button onclick="appendToResult('^')">^</button>
+      <button onclick="appendToResult('.')">.</button>
+      <button onclick="deleteLast()">DEL</button> <!-- Added delete button -->
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
